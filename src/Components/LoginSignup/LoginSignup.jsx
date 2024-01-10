@@ -10,6 +10,8 @@ const LoginSignup = () => {
     name: "",
     email: "",
     password: "",
+    confirmpassword:"",
+    
   });
   const [forgotPassword, setForgotPassword] = useState(false);
 
@@ -28,22 +30,45 @@ const LoginSignup = () => {
     } else {
       console.log("Forgot Password for:", formData.email);
 
-      setFormData({ name: "", email: "", password: "" });
+      setFormData({ name: "", email: "", password: "", confirmpassword:""});
     }
 
-    setFormData({ name: "", email: "", password: "" });
+    setFormData({ name: "", email: "", password: "",confirmpassword:""});
   };
 
   const dynamicFields =
     action === "Login" || action === "Forgot Password" ? null : (
+<div>
+  <div className="inputsmall" >
+     
+      <img src={user_icon} alt="" />
+      <input
+        type="text"
+        placeholder="Firstname"
+        value={formData.name}
+        onChange={(e) => handleChange("name", e.target.value)}
+      />
+
+   
+      <img src={user_icon} alt="" />
+      <input
+        type="text"
+        placeholder="Lastname"
+        value={formData.name}
+        onChange={(e) => handleChange("name", e.target.value)}
+      />
+  
+    </div>
+      
       <div className="input">
         <img src={user_icon} alt="" />
         <input
           type="text"
-          placeholder="Name"
+          placeholder="Username"
           value={formData.name}
           onChange={(e) => handleChange("name", e.target.value)}
         />
+      </div>
       </div>
     );
 
@@ -74,6 +99,22 @@ const LoginSignup = () => {
             onChange={(e) => handleChange("password", e.target.value)}
           />
         </div>
+        
+        {action === "Login" ? (
+          <div></div>
+        ): (
+        <div className="input">
+        <img src={password_icon} alt="" />
+        <input
+            type="password"
+            placeholder="Confirm Password"
+            value={formData.password}
+            onChange={(e) => handleChange("confirmpassword", e.target.value)}
+          />
+        </div>
+        )}
+
+
       </div>
       {/* {(action === 'Sign Up' || action === 'Login') && (
         <div className='forgot-password' onClick={() => setAction('Forgot Password')}>
@@ -93,7 +134,7 @@ const LoginSignup = () => {
       )}
       <div className="submit-container">
         <div className="submit" onClick={handleAction}>
-          {action === "Forgot Password" ? "Reset Password" : action}
+          {action === "Forgot Password" ? "Reset" : action}
         </div>
       </div>
 

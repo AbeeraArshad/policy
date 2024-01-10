@@ -5,7 +5,12 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import img1 from "../image/main.jpg";
-
+import img2 from "../image/adamjee.jpg"
+import img3 from "../image/jubilee.jpg"
+import img4 from "../image/askari.jpg"
+import img5 from "../image/takaful.png"
+import img6 from "../image/ubl.png"
+import img7 from "../image/car-solid.svg"
 const navigation = [
   { name: "Home", href: "#" },
   { name: "Insurance", href: "#" },
@@ -14,97 +19,78 @@ const navigation = [
 ];
 const features = [
   {
-    name: "Push to Deploy",
+    name: "100% Free",
     description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi vitae lobortis.",
-       FontAwesomeIcon:{faEnvelope} ,
+      "All information and advice is free of cost. The price you see is direct customer price.",
+    FontAwesomeIcon: { faEnvelope },
   },
   {
-    name: "SSL Certificates",
+    name: "Top-rated insurance",
     description:
-      "Qui aut temporibus nesciunt vitae dicta repellat sit dolores pariatur. Temporibus qui illum aut.",
+      "We have all the top-rated insurance companies on your platform.",
     //icon: LockClosedIcon,
   },
   {
-    name: "Simple Queues",
+    name: "Accuracy",
     description:
-      "Rerum quas incidunt deleniti quaerat suscipit mollitia. Amet repellendus ut odit dolores qui.",
+      "We collect all data directly from our partners and do not hide or mislead you.",
     //icon: ArrowPathIcon,
   },
   {
-    name: "Advanced Security",
+    name: "Transparency/Convenience",
     description:
-      "Ullam laboriosam est voluptatem maxime ut mollitia commodi. Et dignissimos suscipit perspiciatis.",
+      "We guide you on the bases of what you need, not on what we want you to know.",
     //icon: ShieldCheckIcon,
   },
-  {
-    name: "Powerful API",
-    description:
-      "Ab a facere voluptatem in quia corrupti veritatis aliquam. Veritatis labore quaerat ipsum quaerat id.",
-    //icon: CogIcon,
-  },
-  {
-    name: "Database Backups",
-    description:
-      "Quia qui et est officia cupiditate qui consectetur. Ratione similique et impedit ea ipsum et.",
-    //icon: ServerIcon,
-  },
+
 ];
 const blogPosts = [
   {
     id: 1,
-    title: "Boost your conversion rate",
+    title: "Get Upto 15% Discount With JS Bank Debit & Credit Card",
     href: "#",
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
-    category: { name: "Article", href: "#" },
+    category: { name: "", href: "#" },
     imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
-    preview:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
+      " https://mettisglobal.news/wp-content/uploads/2022/03/IMG7129JS-Bank-1.jpg", preview:
+      "Max Discounted Rs:2000 ",
     author: {
-      name: "Roel Aufderehar",
+      name: "Term & Condition",
       imageUrl:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-      href: "#",
+        "https://s3-symbol-logo.tradingview.com/js-bank--600.png", href: "#",
     },
     readingLength: "6 min",
   },
   {
     id: 2,
-    title: "How to use search engine optimization to drive sales",
+    title: "Get Upto 15% Discount With Faysal Bank Debit & Credit Card",
     href: "#",
     date: "Mar 10, 2020",
     datetime: "2020-03-10",
-    category: { name: "Video", href: "#" },
+    category: { name: "", href: "#" },
     imageUrl:
-      "https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
-    preview:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.",
-    author: {
-      name: "Brenna Goyette",
-      imageUrl:
-        "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-      href: "#",
-    },
+      " https://i.brecorder.com/primary/2022/12/63afa41390e0b.png", preview:
+      "Max Discounted Rs:2000  ", author: {
+        name: "Term & Condition",
+        imageUrl:
+          "https://upload.wikimedia.org/wikipedia/commons/c/cb/Faysal_Bank.png", href: "#",
+      },
     readingLength: "4 min",
   },
   {
     id: 3,
-    title: "Improve your customer experience",
+    title: "Get Upto 15% Discount With Silk Bank Debit & Credit Card",
     href: "#",
     date: "Feb 12, 2020",
     datetime: "2020-02-12",
-    category: { name: "Case Study", href: "#" },
+    category: { name: "", href: "#" },
     imageUrl:
-      "https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
-    preview:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.",
+      " https://upload.wikimedia.org/wikipedia/en/a/a3/Silkbank_logo.png ", preview:
+      "Max Discounted Rs:2000  ",
     author: {
-      name: "Daniela Metz",
-      imageUrl:
-        "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-      href: "#",
+      name: "Term & Condition",
+      imageUrl: "https://images.crunchbase.com/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1484220707/lfoeojixxge8cgyntcz7.png", href: "#",
     },
     readingLength: "11 min",
   },
@@ -231,7 +217,7 @@ const Home = () => {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="text-base font-medium text-white hover:text-gray-300"
+                      className=" text-xl font-medium text-white hover:text-orange-600"
                     >
                       {item.name}
                     </a>
@@ -381,33 +367,41 @@ const Home = () => {
                           .
                         </p>
                       </form> */}
-                      <button
-                        type="button"
-                        className="inline-flex items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 "
-                      >
-                        Car Insurance
-                      </button>
-                      <button
-                        type="button"
-                        className="inline-flex items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                      >
-                        Home Insurance
-                      </button>
+                      <div className="bt1">
+                      
+                        <button
+                        
+                          type="button"
+                          className="mr-4 inline-flex items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 ">
+                          Car Insurance
+                         
+                        </button>
+                       
+                        </div>
+                      <div className="bt2">
+                        <button
+                          type="button"
+                          className="inline-flex items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                        >
+                          Home Insurance
+                        </button></div>
                     </div>
                     <div className="mt-10 sm:mt-12 grid gap-x-4 gap-y-4 grid-cols-3">
-                      <button
-                        type="button"
-                        className="inline-flex items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                      >
-                        Life Insurance
-                      </button>
-                      <button
-                        type="button"
-                        className="inline-flex items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                      >
-                        Travel Insurance
-                      </button>
-
+                      <div className="bt3">
+                        <button
+                          type="button"
+                          className="inline-flex items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                        >
+                          Life Insurance
+                        </button></div>
+                      <div className="bt4">
+                        <button
+                          type="button"
+                          className="inline-flex items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                        >
+                          Travel Insurance
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -426,60 +420,86 @@ const Home = () => {
           </div>
 
           {/* Feature section with screenshot */}
-          <div className="relative bg-gray-50 pt-16 sm:pt-24 lg:pt-32">
-            <div className="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8">
+          <div className="relative bg-gray-50 pt-16 sm:pt-24 lg:pt-32 ">
+            <div className="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8 ">
               <div>
-                <h2 className="text-lg font-semibold text-cyan-600">
-                  Serverless
+                <h2 className="mt-2 text-3xl font-bold tracking-tight text-orange-600 sm:text-4xl">
+                  We have helped power 3,621,473 comparisons
                 </h2>
-                <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                  No server? No problem.
+
+                <p className="mx-auto mt-5 max-w-prose text-xl text-orange-400">
+                  Thousands of customers have already benefitted through our free, reliable and expert services. Become a customer now and be rewarded with smart choices for significant savings
                 </p>
-                <p className="mx-auto mt-5 max-w-prose text-xl text-gray-500">
-                  Phasellus lorem quam molestie id quisque diam aenean nulla in.
-                  Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend
-                  condimentum id viverra nulla.
-                </p>
-              </div>
-              <div className="mt-12 -mb-10 sm:-mb-24 lg:-mb-80">
-                <img
-                  className="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5"
-                  src="https://tailwindui.com/img/component-images/green-project-app-screenshot.jpg"
-                  alt=""
-                />
               </div>
             </div>
+            {/* Logo Cloud */}
+            <div className="bg-white pt-20">
+              <div className="mx-auto max-w-9xl py-16 px-6 lg:px-10 ">
+                <h2 className="mt-2 text-3xl font-bold tracking-tight text-orange-600 sm:text-4xl text-center">
+                  Our Partners
+                </h2>
+                <p className="mx-auto mt-5 max-w-prose text-2xl text-orange-400">
+                  Our panel consists of trusted household names from the insurance industry.
+                </p>
+                <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
+                  <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                    <img className="h-20" src={img2} alt="#" />
+                  </div>
+                  <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                    <img className="h-20" src={img3} alt="#" />
+                  </div>
+                  <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                    <img
+                      className="h-20"
+                      src={img4}
+                      alt="#"
+                    />
+                  </div>
+                  <div className="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
+                    <img
+                      className="h-20"
+                      src={img5}
+                      alt="#"
+                    />
+                  </div>
+                  <div className="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
+                    <img
+                      className="h-20"
+                      src={img6}
+                      alt="#"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
 
+
           {/* Feature section with grid */}
-          <div className="relative bg-white py-16 sm:py-24 lg:py-32">
+          <div className="relative bg-white py-16 sm:py-24  ">
             <div className="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8">
-              <h2 className="text-lg font-semibold text-cyan-600">
-                Deploy faster
-              </h2>
-              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Everything you need to deploy your app
+              <p className="mt-2 text-3xl font-bold tracking-tight text-orange-600 sm:text-4xl">
+                Why Choose us
               </p>
-              <p className="mx-auto mt-5 max-w-prose text-xl text-gray-500">
-                Phasellus lorem quam molestie id quisque diam aenean nulla in.
-                Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend
-                condimentum id viverra nulla.
+              <p className="mx-auto mt-5 max-w-prose text-xl text-orange-400">
+                To provide solutions that protect the future of our customers
               </p>
               <div className="mt-12">
-                <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 pb-12 ">
                   {features.map((feature) => (
                     <div key={feature.name} className="pt-6">
                       <div className="flow-root rounded-lg bg-gray-50 px-6 pb-8">
                         <div className="-mt-6">
                           <div>
-                            <span className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-teal-500 to-cyan-600 p-3 shadow-lg">
+                            <span className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-orange-500 to-orange-300 p-3 shadow-lg">
                               <FontAwesomeIcon className="h-6 w-6 text-white" aria-hidden="true" />
                             </span>
                           </div>
-                          <h3 className="mt-8 text-lg font-medium tracking-tight text-gray-900">
+                          <h3 className="mt-8 text-lg font-medium tracking-tight text-orange-600">
                             {feature.name}
                           </h3>
-                          <p className="mt-5 text-base text-gray-500">
+                          <p className="mt-5 text-base text-orange-400">
                             {feature.description}
                           </p>
                         </div>
@@ -492,7 +512,7 @@ const Home = () => {
           </div>
 
           {/* Testimonial section */}
-          <div className="bg-gradient-to-r from-teal-500 to-cyan-600 pb-16 lg:relative lg:z-10 lg:pb-0">
+          <div className="bg-gradient-to-r from-orange-500 to-orange-300 pb-16 lg:relative lg:z-10 lg:pb-0">
             <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-8 lg:px-8">
               <div className="relative lg:-my-8">
                 <div
@@ -531,7 +551,7 @@ const Home = () => {
                       <p className="text-base font-medium text-white">
                         Judith Black
                       </p>
-                      <p className="text-base font-medium text-cyan-100">
+                      <p className="text-base font-medium text-white">
                         CEO at PureInsights
                       </p>
                     </footer>
@@ -545,15 +565,14 @@ const Home = () => {
           <div className="relative bg-gray-50 py-16 sm:py-24 lg:py-32">
             <div className="relative">
               <div className="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8">
-                <h2 className="text-lg font-semibold text-cyan-600">Learn</h2>
-                <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                  Helpful Resources
+                <p className="mt-2 text-xl font-bold tracking-tight text-orange-600 sm:text-5xl">
+                  Promotions
                 </p>
-                <p className="mx-auto mt-5 max-w-prose text-xl text-gray-500">
+                {/* <p className="mx-auto mt-5 max-w-prose text-xl text-orange-400">
                   Phasellus lorem quam molestie id quisque diam aenean nulla in.
                   Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend
                   condimentum id viverra nulla.
-                </p>
+                </p> */}
               </div>
               <div className="mx-auto mt-12 grid max-w-md gap-8 px-6 sm:max-w-lg lg:max-w-7xl lg:grid-cols-3 lg:px-8">
                 {blogPosts.map((post) => (
@@ -563,14 +582,14 @@ const Home = () => {
                   >
                     <div className="flex-shrink-0">
                       <img
-                        className="h-48 w-full object-cover"
+                        className="h-40 w-full   object-cover"
                         src={post.imageUrl}
                         alt=""
                       />
                     </div>
                     <div className="flex flex-1 flex-col justify-between bg-white p-6">
                       <div className="flex-1">
-                        <p className="text-sm font-medium text-cyan-600">
+                        <p className="text-sm font-medium text-orange-600">
                           <a
                             href={post.category.href}
                             className="hover:underline"
@@ -579,10 +598,10 @@ const Home = () => {
                           </a>
                         </p>
                         <a href={post.href} className="mt-2 block">
-                          <p className="text-xl font-semibold text-gray-900">
+                          <p className="text-xl font-semibold text-orange-600">
                             {post.title}
                           </p>
-                          <p className="mt-3 text-base text-gray-500">
+                          <p className="mt-3 text-base text-orange-400">
                             {post.preview}
                           </p>
                         </a>
@@ -598,7 +617,7 @@ const Home = () => {
                           </a>
                         </div>
                         <div className="ml-3">
-                          <p className="text-sm font-medium text-gray-900">
+                          <p className="text-sm font-medium text-orange-600">
                             <a
                               href={post.author.href}
                               className="hover:underline"
@@ -606,7 +625,7 @@ const Home = () => {
                               {post.author.name}
                             </a>
                           </p>
-                          <div className="flex space-x-1 text-sm text-gray-500">
+                          <div className="flex space-x-1 text-sm text-orange-400">
                             <time dateTime={post.datetime}>{post.date}</time>
                             <span aria-hidden="true">&middot;</span>
                             <span>{post.readingLength} read</span>
@@ -621,7 +640,7 @@ const Home = () => {
           </div>
 
           {/* CTA Section */}
-          <div className="relative bg-gray-900">
+          <div className="relative bg-gradient-to-r from-orange-500 to-orange-300">
             <div className="relative h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
               <img
                 className="h-full w-full object-cover"
@@ -630,28 +649,27 @@ const Home = () => {
               />
               <div
                 aria-hidden="true"
-                className="absolute inset-0 bg-gradient-to-r from-teal-500 to-cyan-600 mix-blend-multiply"
+                className="absolute inset-0 bg-gradient-to-r from-orange-500 mix-blend-multiply"
               />
             </div>
             <div className="relative mx-auto max-w-md py-12 px-6 sm:max-w-7xl sm:py-20 md:py-28 lg:px-8 lg:py-32">
               <div className="md:ml-auto md:w-1/2 md:pl-10">
-                <h2 className="text-lg font-semibold text-gray-300">
+                {/* <h2 className="text-lg font-semibold text-gray-300">
                   Award winning support
-                </h2>
+                </h2> */}
                 <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                  We’re here to help
+                  About Us
                 </p>
-                <p className="mt-3 text-lg text-gray-300">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
-                  egestas tempus tellus etiam sed. Quam a scelerisque amet
-                  ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat
-                  quisque ut interdum tincidunt duis.
+                <p className="mt-3 text-lg text-white">
+                  Pakistan has one of the lowest penetration of insurance in the region, with less than 10 Million population of 220 Million having any kind of insurance coverage. Vast majority of population considers insurance as investment product rather protection from financial loss. This has been primarily due to large number of customers opting for life insurance as compared to other risk based protection products like health insurance, home insurance and etc.
+
+                  All procedures, such as claims, are the same as in traditional insurance organizations. The distinction lies within the nature of the agreement, not within the processes.
                 </p>
                 <div className="mt-8">
                   <div className="inline-flex rounded-md shadow">
                     <a
                       href="#"
-                      className="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-gray-900 hover:bg-gray-50"
+                      className="inline-flex items-center justify-center rounded-md border border-transparent bg-orange-600 px-5 py-3 text-base font-medium text-white hover:bg-orange-400"
                     >
                       Visit the help center
                       {/* <ArrowTopRightOnSquareIcon className="-mr-1 ml-3 h-5 w-5 text-gray-400" aria-hidden="true" /> */}

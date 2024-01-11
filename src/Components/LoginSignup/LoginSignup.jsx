@@ -249,7 +249,8 @@ const LoginSignup = () => {
             <div></div>
           ) : (
             <div className="account">
-              Don't have an account? <span onClick={handleSignIn}>Sign In</span>
+              
+             Already have an account? <span onClick={handleSignIn}>Sign In</span>
             </div>
           )}
         </div>

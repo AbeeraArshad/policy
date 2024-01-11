@@ -5,6 +5,8 @@ import email_icon from "../Assets/email.png";
 import password_icon from "../Assets/password.png";
 import swal from "sweetalert";
 import axios from "axios";
+import Home from "../../pages/Home";
+import { useNavigate } from "react-router";
 // import { act } from "react-dom/test-utils";
 
 const LoginSignup = () => {
@@ -24,6 +26,7 @@ const LoginSignup = () => {
   const [password, setPassword] = useState("");
   const [confirm_password, setConfirmPassword] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const navigation = useNavigate(null);
   // const [forgetPassword, setForgetPassword] = useState(false);
 
   const handleSignUp = () => {
@@ -75,7 +78,7 @@ const LoginSignup = () => {
         // sessionStorage.clear();
         sessionStorage.setItem("username", username);
         sessionStorage.setItem("password", password);
-        // navigation('/home');
+        navigation('/');
         swal("Successfully Logged In")
       } else {
         swal("Please sign in with correct credentials.");
@@ -227,7 +230,11 @@ const LoginSignup = () => {
             </div>
           )}
         </div> */}
-        <div className="switch">
+        {/* {isLoggedIn ? (
+          <div></div>
+          // <a href="/login"></a>
+        ) : ( */}
+          <div className="switch">
           <button
             type="submit"
             className="submit"
@@ -246,6 +253,8 @@ const LoginSignup = () => {
             </div>
           )}
         </div>
+        {/* )} */}
+        
       </div>
     </div>
   );

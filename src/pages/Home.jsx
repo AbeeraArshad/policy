@@ -226,7 +226,7 @@ const Home = () => {
               </div>
               <div className="hidden md:flex md:items-center md:space-x-6">
                 <a
-                  href="#"
+                  href="/login"
                   className="inline-flex items-center rounded-md border border-transparent bg-orange-600 px-4 py-2 text-base font-medium text-white hover:bg-orange-400"
                 >
                   Log in

@@ -341,18 +341,9 @@ const Register = () => {
 
         <div className="mx-auto w-full max-w-sm ">
           <div>
-            {/* <img
-              className="h-12 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-              alt="Your Company"
-            /> */}
+         
             <h2 className="mt-6 text-4xl font-bold tracking-tight text-orange-600">Registration</h2>
-            {/* <p className="mt-2 text-sm text-gray-600">
-              Or{' '}
-              <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-                start your 14-day free trial
-              </a>
-            </p> */}
+          
           </div>
 
           <div className="mt-8">

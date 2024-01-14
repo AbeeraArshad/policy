@@ -11,6 +11,7 @@ import img4 from "../image/askari.jpg";
 import img5 from "../image/takaful.png";
 import img6 from "../image/ubl.png";
 import img7 from "../image/car-solid.svg";
+import "./UserDashboard";
 import { useNavigate } from "react-router";
 const navigation = [
   { name: "Home", href: "#" },
@@ -188,7 +189,7 @@ const footerNavigation = {
   ],
 };
 
-const Home = () => {
+const UserDashboard = () => {
 
   return (
     <div className="bg-white">
@@ -311,11 +312,11 @@ const Home = () => {
           </Transition>
         </Popover>
         <main>
-          <div className="bg-orange-300	 pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 ">
-            <div className="mx-auto max-w-7xl lg:px-8">
-              <div className="lg:grid lg:grid-cols-2 lg:gap-8">
+          <div className="bg-orange-300	 pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 content">
+            <div className="mx-auto max-w-7xl lg:px-8 ">
+              <div className=" lg:gap-8">
                 <div className="mx-auto max-w-md px-6 sm:max-w-2xl sm:text-center lg:flex lg:items-center lg:px-0 lg:text-left">
-                  <div className="lg:py-24">
+                  <div className="lg:py-24 ">
                     <a
                       href="#"
                       className="inline-flex items-center rounded-full bg-orange-600 p-2 pr-4 text-white hover:text-gray-200 sm:text-base lg:text-sm xl:text-base"
@@ -411,16 +412,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div className="mt-12 -mb-16 sm:-mb-48 lg:relative lg:m-0">
-                  <div className="mx-auto max-w-md px-6 sm:max-w-2xl lg:max-w-none lg:px-0">
-                    {/* Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ */}
-                    <img
-                      className="w-1200px lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:max-w-none"
-                      src={img1}
-                      alt=""
-                    />
-                  </div>
-                </div>
+               
               </div>
             </div>
           </div>
@@ -802,4 +794,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default UserDashboard;

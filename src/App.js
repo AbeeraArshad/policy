@@ -3,23 +3,28 @@ import './App.css';
 import LoginSignup from './Components/LoginSignup/LoginSignup';
 
 import Home from './pages/Home';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
 import Register from './pages/Register/Register';
 import { Company } from './pages/Company';
+import UserDashboard from './pages/UserDashboard'
+import { useState } from 'react';
 
 function App() {
-  return (
+  
+    return (
     <div>
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Home/>}></Route>
+          <Route path='/' element={<Home />}></Route>
           <Route path='/login' element={<LoginSignup/>}></Route>
           <Route path='/register' element={<Register/>}></Route>
+        <Route path='/userDashboard' element={<UserDashboard/>}></Route>
+        <Route path='/company' element={<Company/>}></Route>
         </Routes>
-      </BrowserRouter>  */}
-      {/* <Home/>
-     <LoginSignup/>*/}
-     <Company/>
+      </BrowserRouter> 
+    {/* <Home/>
+     <LoginSignup/> */}
+     {/* <Company/> */}
     </div>
   );
 }

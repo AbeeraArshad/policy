@@ -5,7 +5,6 @@ import email_icon from "../Assets/email.png";
 import password_icon from "../Assets/password.png";
 import swal from "sweetalert";
 import axios from "axios";
-import Home from "../../pages/Home";
 import { useNavigate } from "react-router";
 // import { act } from "react-dom/test-utils";
 
@@ -78,7 +77,7 @@ const LoginSignup = () => {
         // sessionStorage.clear();
         sessionStorage.setItem("username", username);
         sessionStorage.setItem("password", password);
-        navigation('/');
+        navigation('/userDashboard');
         swal("Successfully Logged In")
       } else {
         swal("Please sign in with correct credentials.");

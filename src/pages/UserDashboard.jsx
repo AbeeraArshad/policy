@@ -345,8 +345,11 @@ const Home = () => {
                       <span className="block bg-orange-600 bg-clip-text pb-2 text-5xl text-transparent sm:pb-2 mt-2 absolute ml-60 left-[3rem] transform -translate-y-[15rem]">
                         A better way to uplift your living
                       </span>
+                        <div className="rounded-full bg-gradient-to-r from-orange-500 to-orange-300 px-3 py-0.5 text-sm font-semibold leading-5 text-white">
+                        We're hiring
+                      </div>
                     </h1>
-                   
+                  
                     </div>
                     <p className="text-base text-white sm:text-xl lg:text-lg xl:text-xl">
                       Anim aute id magna aliqua ad ad non deserunt sunt. Qui
@@ -434,7 +437,7 @@ const Home = () => {
                     <div className="bt1">
                         <button
                           type="button"
-                          className="mr-4 inline-flex items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 "
+                          className="mr-4  transform -translate-y-[5rem]   ml-[-76rem] max-w-[15%] inline-flex items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 "
                         >
                           Car Insurance
                         </button>
@@ -442,7 +445,7 @@ const Home = () => {
                       <div className="bt2">
                         <button
                           type="button"
-                          className="inline-flex items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                          className=" transform -translate-y-[3rem]  ml-[-77rem] max-w-[15%] inline-flex items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                         >
                           Home Insurance
                         </button>
@@ -452,7 +455,7 @@ const Home = () => {
                       <div className="bt3">
                         <button
                           type="button"
-                          className="inline-flex items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                          className="inline-flex ml-[18rem]   transform -translate-y-[14rem]  left-[5rem] max-w-[36%] items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                         >
                           Life Insurance
                         </button>
@@ -460,7 +463,7 @@ const Home = () => {
                       <div className="bt4">
                         <button
                           type="button"
-                          className="inline-flex items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                          className="inline-flex transform -translate-y-[9rem]  ml-[-14rem] max-w-[36%] items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                         >
                           Travel Insurance
                         </button>
@@ -608,7 +611,7 @@ const Home = () => {
                     <div className="flex-shrink-0">
                       <img
                         className="h-40 w-full   object-cover"
-                        src={post.imageUrl}
+                        // src={post.imageUrl}
                         alt=""
                       />
                     </div>

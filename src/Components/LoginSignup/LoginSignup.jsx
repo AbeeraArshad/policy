@@ -78,7 +78,7 @@ const LoginSignup = () => {
         // sessionStorage.clear();
         sessionStorage.setItem("username", username);
         sessionStorage.setItem("password", password);
-        navigation('/');
+        navigation('/userDashboard');
         swal("Successfully Logged In")
       } else {
         swal("Please sign in with correct credentials.");

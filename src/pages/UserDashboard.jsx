@@ -1,6 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {CChart } from '@coreui/react-chartjs';
+
 
 import { Fragment, useState } from "react";
 import { Popover, Transition } from "@headlessui/react";
@@ -12,6 +14,7 @@ import img5 from "../image/takaful.png";
 import img6 from "../image/ubl.png";
 import img9 from "../image/user-dash1.jpg";
 import img10 from "../image/graph.jpg";
+
 
 import { useNavigate } from "react-router";
 const navigation = [
@@ -469,6 +472,29 @@ const Home = () => {
                         </button>
                       </div>
                     </div>
+                    <div className='chart1'>
+    <CChart
+  type="doughnut"
+  data={{
+    labels: ['Life Insurance', 'Travel Insurance', 'Car Insurance', 'Health Insurance'],
+    datasets: [
+      {
+        backgroundColor: ['#41B883', '#E46651', '#00D8FF', '#DD1B16'],
+        data: [40, 20, 80, 10],
+      },
+    ],
+  }}
+  options={{
+    plugins: {
+      legend: {
+        labels: {
+          color: ('--cui-body-color'),
+        }
+      }
+    },
+  }}
+/>
+</div>
             
             {/* Logo Cloud */}
             <div className="bg-white pt-20">

@@ -19,9 +19,9 @@ import "../pages/Company.css"
 import {CChart } from '@coreui/react-chartjs'
 
 const navigation = [
-  { name: 'Dashboard', href: '#', icon: HomeIcon, current: true },
-  { name: 'Team', href: '#', icon: UsersIcon, current: false },
-  { name: 'Projects', href: '#', icon: FolderIcon, current: false },
+  { name: 'Company Dashboard', href: '#', icon: HomeIcon, current: true },
+  { name: 'Users', href: '#', icon: UsersIcon, current: false },
+  { name: 'Users Review', href: '#', icon: FolderIcon, current: false },
   { name: 'Calendar', href: '#', icon: CalendarIcon, current: false },
   { name: 'Documents', href: '#', icon: InboxIcon, current: false },
   { name: 'Reports', href: '#', icon: ChartBarIcon, current: false },
@@ -32,9 +32,9 @@ const userNavigation = [
   { name: 'Sign out', href: '#' },
 ]
 const stats = [
-    { id: 1, name: 'Total Subscribers', stat: '71,897', icon: UsersIcon, change: '122', changeType: 'increase' },
-    { id: 2, name: 'Avg. Open Rate', stat: '58.16%', icon: EnvelopeOpenIcon, change: '5.4%', changeType: 'increase' },
-    { id: 3, name: 'Avg. Click Rate', stat: '24.57%', icon: CursorArrowRaysIcon, change: '3.2%', changeType: 'decrease' },
+    { id: 1, name: 'Total Users', stat: '71,897', icon: UsersIcon, change: '122', changeType: 'increase' },
+    { id: 2, name: 'Sales', stat: '58.16%', icon: EnvelopeOpenIcon, change: '5.4%', changeType: 'increase' },
+    { id: 3, name: 'Revenue', stat: '24.57%', icon: CursorArrowRaysIcon, change: '3.2%', changeType: 'decrease' },
   ]
   const metrics = [
     { id: 1, stat: '8K+', emphasis: 'Companies', rest: 'use laoreet amet lacus nibh integer quis.' },
@@ -132,13 +132,18 @@ export const Company = () => {
     {/* Static sidebar for desktop */}
     <div className="hidden md:fixed md:inset-y-0 md:flex md:w-64 md:flex-col">
       {/* Sidebar component, swap this element with another sidebar if you like */}
-      <div className="flex flex-grow flex-col overflow-y-auto bg-indigo-700 pt-5">
+      <div className="flex flex-grow flex-col overflow-y-auto bg-orange-400 pt-5">
         <div className="flex flex-shrink-0 items-center px-4">
-          <img
-            className="h-8 w-auto"
-            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=300"
+          {/* <img
+            className="h-12 w-auto"
+            src="https://www.pinclipart.com/picdir/middle/336-3368754_healthcare-it-solution-provider-health-insurance-logo-png.png"
             alt="Your Company"
-          />
+          /> */}
+          <div className="logo">
+            <h1>
+              Logo Here
+            </h1>
+          </div>
         </div>
         <div className="mt-5 flex flex-1 flex-col">
           <nav className="flex-1 space-y-1 px-2 pb-4">
@@ -147,11 +152,11 @@ export const Company = () => {
                 key={item.name}
                 href={item.href}
                 className={classNames(
-                  item.current ? 'bg-indigo-800 text-white' : 'text-indigo-100 hover:bg-indigo-600',
+                  item.current ? 'bg-orange-600 text-white' : 'text-indigo-100 hover:bg-orange-600',
                   'group flex items-center px-2 py-2 text-sm font-medium rounded-md'
                 )}
               >
-                <item.icon className="mr-3 h-6 w-6 flex-shrink-0 text-indigo-300" aria-hidden="true" />
+                <item.icon className="mr-3 h-6 w-6 flex-shrink-0 text-orange-700" aria-hidden="true" />
                 {item.name}
               </a>
             ))}
@@ -171,7 +176,7 @@ export const Company = () => {
         </button>
         <div className="flex flex-1 justify-between px-4">
           <div className="flex flex-1">
-            <form className="flex w-full md:ml-0" action="#" method="GET">
+            {/* <form className="flex w-full md:ml-0" action="#" method="GET">
               <label htmlFor="search-field" className="sr-only">
                 Search
               </label>
@@ -187,25 +192,25 @@ export const Company = () => {
                   name="search"
                 />
               </div>
-            </form>
+            </form> */}
           </div>
           <div className="ml-4 flex items-center md:ml-6">
             <button
               type="button"
-              className="rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+              className="rounded-full hover:bg-orange-400 bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
             >
               <span className="sr-only">View notifications</span>
-              <BellIcon className="h-6 w-6" aria-hidden="true" />
+              <BellIcon className="h-6 w-6 " aria-hidden="true" />
             </button>
 
             {/* Profile dropdown */}
             <Menu as="div" className="relative ml-3">
               <div>
-                <Menu.Button className="flex max-w-xs items-center rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                <Menu.Button className="flex max-w-xs items-center hover:bg-orange-400 rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2">
                   <span className="sr-only">Open user menu</span>
                   <img
-                    className="h-8 w-8 rounded-full"
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    className="w-20 rounded-full"
+                    src="https://e7.pngegg.com/pngimages/881/852/png-clipart-computer-icons-drop-down-list-arrow-font-awesome-down-arrow-angle-hand.png"
                     alt=""
                   />
                 </Menu.Button>
@@ -268,7 +273,7 @@ export const Company = () => {
             className="relative overflow-hidden rounded-lg bg-white px-4 pt-5 pb-12 shadow sm:px-6 sm:pt-6"
           >
             <dt>
-              <div className="absolute rounded-md bg-indigo-500 p-3">
+              <div className="absolute rounded-md bg-orange-500 p-3">
                 <item.icon className="h-6 w-6 text-white" aria-hidden="true" />
               </div>
               <p className="ml-16 truncate text-sm font-medium text-gray-500">{item.name}</p>
@@ -292,7 +297,7 @@ export const Company = () => {
               </p>
               <div className="absolute inset-x-0 bottom-0 bg-gray-50 px-4 py-4 sm:px-6">
                 <div className="text-sm">
-                  <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+                  <a href="#" className="font-medium text-orange-600 hover:text-orange-400">
                     {' '}
                     View all<span className="sr-only"> {item.name} stats</span>
                   </a>
@@ -315,7 +320,7 @@ export const Company = () => {
     labels: ["January", "February", "March", "April", "May", "June", "July"],
     datasets: [
       {
-        label: "My First dataset",
+        label: "Highest Sale",
         backgroundColor: "rgba(220, 220, 220, 0.2)",
         borderColor: "rgba(220, 220, 220, 1)",
         pointBackgroundColor: "rgba(220, 220, 220, 1)",
@@ -323,7 +328,7 @@ export const Company = () => {
         data: [40, 20, 12, 39, 10, 40, 39, 80, 40]
       },
       {
-        label: "My Second dataset",
+        label: "Lowest Sale",
         backgroundColor: "rgba(151, 187, 205, 0.2)",
         borderColor: "rgba(151, 187, 205, 1)",
         pointBackgroundColor: "rgba(151, 187, 205, 1)",
@@ -365,7 +370,7 @@ export const Company = () => {
     <CChart
   type="doughnut"
   data={{
-    labels: ['VueJs', 'EmberJs', 'ReactJs', 'AngularJs'],
+    labels: ['Life Insurance', 'Travel Insurance', 'Car Insurance', 'Health Insurance'],
     datasets: [
       {
         backgroundColor: ['#41B883', '#E46651', '#00D8FF', '#DD1B16'],
@@ -385,6 +390,7 @@ export const Company = () => {
 />
 </div>
 </div>
+
 </div>
 )
 }

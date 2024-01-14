@@ -151,3 +151,10 @@ margin-left: -170px;
   .main{
     display: flex;
   }
+  .budget{
+    margin-left: 5px;
+    width: 472px;
+    gap: 10px;
+    margin-right: 10px;
+    display: flex;
+  }

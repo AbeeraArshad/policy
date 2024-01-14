@@ -474,7 +474,8 @@ const Register = () => {
                     value={income}
                     onChange={(e) => setIncome(e.target.value)}
                   />
-           </div>     
+           </div>    
+          
           </div> 
 
                 <div className="education">
@@ -487,6 +488,16 @@ const Register = () => {
                     onChange={(e) => setEducation(e.target.value)}
                   />
                 </div>
+                <div className="budget">
+                  <label htmlFor="budget" id="budget_label"><h1 className="budgetheading">  Budget </h1> </label>
+                  <input
+                    type="number"
+                    name="budget"
+                    id="budget"
+                    value={income}
+                    onChange={(e) => setIncome(e.target.value)}
+                  />
+           </div> 
 
                 <div className="employment">
                   <label>  Employment </label>

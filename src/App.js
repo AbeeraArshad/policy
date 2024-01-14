@@ -19,7 +19,7 @@ function App() {
       </BrowserRouter>  */}
       {/* <Home/>
      <LoginSignup/>*/}
-     <Company/> 
+     <Company/>
     </div>
   );
 }

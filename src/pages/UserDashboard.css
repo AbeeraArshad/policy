@@ -4,3 +4,10 @@
     margin-top: 55px;
     margin-left: -10px;  
 }
+.chartmenu{
+    display: flex;
+   
+}
+.content{
+    text-align: center;
+}

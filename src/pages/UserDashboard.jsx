@@ -1,8 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import {CChart } from '@coreui/react-chartjs';
-
 
 import { Fragment, useState } from "react";
 import { Popover, Transition } from "@headlessui/react";
@@ -12,10 +10,8 @@ import img3 from "../image/jubilee.jpg";
 import img4 from "../image/askari.jpg";
 import img5 from "../image/takaful.png";
 import img6 from "../image/ubl.png";
-import img9 from "../image/user-dash1.jpg";
-import img10 from "../image/graph.jpg";
-
-
+import img7 from "../image/car-solid.svg";
+import "./UserDashboard";
 import { useNavigate } from "react-router";
 const navigation = [
   { name: "Home", href: "#" },
@@ -193,7 +189,7 @@ const footerNavigation = {
   ],
 };
 
-const Home = () => {
+const UserDashboard = () => {
 
   return (
     <div className="bg-white">
@@ -236,15 +232,11 @@ const Home = () => {
                 <div>
                   <div className="hidden md:flex md:items-center md:space-x-6">
                     <a
-                      href="/"
+                      href="/login"
                       className="inline-flex items-center rounded-md border border-transparent bg-orange-600 px-4 py-2 text-base font-medium text-white hover:bg-orange-400"
                       
                     >
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
-</svg>
-
-                       Log out
+                       Log in
                     </a>
                     {/* <a
                   href="#"
@@ -256,9 +248,6 @@ const Home = () => {
                 </div>
             </nav>
           </div>
-
-         
-
 
           <Transition
             as={Fragment}
@@ -323,37 +312,29 @@ const Home = () => {
           </Transition>
         </Popover>
         <main>
-          <div className="bg-orange-300	 pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 ">
-            <div className="mx-auto max-w-7xl lg:px-8 h-64">
-              <div className="lg:grid lg:grid-cols-2 lg:gap-8">
+          <div className="bg-orange-300	 pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 content">
+            <div className="mx-auto max-w-7xl lg:px-8 ">
+              <div className=" lg:gap-8">
                 <div className="mx-auto max-w-md px-6 sm:max-w-2xl sm:text-center lg:flex lg:items-center lg:px-0 lg:text-left">
-                  <div className="lg:py-24">
-                    {/* <a
+                  <div className="lg:py-24 ">
+                    <a
                       href="#"
                       className="inline-flex items-center rounded-full bg-orange-600 p-2 pr-4 text-white hover:text-gray-200 sm:text-base lg:text-sm xl:text-base"
-                    > */}
-                      {/* <span className="rounded-full bg-gradient-to-r from-orange-500 to-orange-300 px-3 py-0.5 text-sm font-semibold leading-5 text-white">
+                    >
+                      <span className="rounded-full bg-gradient-to-r from-orange-500 to-orange-300 px-3 py-0.5 text-sm font-semibold leading-5 text-white">
                         We're hiring
                       </span>
                       <span className="ml-4 text-sm">
                         Visit our careers page
-                      </span> */}
-                      {/* <ChevronRightIcon className="ml-2 h-5 w-5 text-gray-500" aria-hidden="true" /> */}
-                    {/* </a> */}
-                    <div className="  flex flex-5 flex-col bg-white p-6   w-100 h-64 transform -translate-y-[7rem] ">
-                    <h1 className="mt-4 text-4xl font-bold tracking-tight text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
-                    
-                    <img  className=" max-w-[62%] h-auto ml-[-100px]  transform -translate-y-[2rem]  left-[5rem]  "src={img9}/>
-                      {/* <span className="block  bg-black mt-2 relative ml-64 left-[10rem] transform -translate-y-[15rem] w-422">A better way to</span> */}
-                      <span className="block bg-orange-600 bg-clip-text pb-2 text-5xl text-transparent sm:pb-2 mt-2 absolute ml-60 left-[3rem] transform -translate-y-[15rem]">
-                        A better way to uplift your living
                       </span>
-                        <div className="rounded-full bg-gradient-to-r from-orange-500 to-orange-300 px-3 py-0.5 text-sm font-semibold leading-5 text-white">
-                        We're hiring
-                      </div>
+                      {/* <ChevronRightIcon className="ml-2 h-5 w-5 text-gray-500" aria-hidden="true" /> */}
+                    </a>
+                    <h1 className="mt-4 text-4xl font-bold tracking-tight text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
+                      <span className="block">A better way to</span>
+                      <span className="block bg-orange-600 bg-clip-text pb-3 text-transparent sm:pb-5">
+                        ship web apps
+                      </span>
                     </h1>
-                  
-                    </div>
                     <p className="text-base text-white sm:text-xl lg:text-lg xl:text-xl">
                       Anim aute id magna aliqua ad ad non deserunt sunt. Qui
                       irure qui Lorem cupidatat commodo. Elit sunt amet fugiat
@@ -394,53 +375,10 @@ const Home = () => {
                           .
                         </p>
                       </form> */}
-                      
-                     
-                    </div>
-                  </div>
-                </div>
-                <div className="mt-12 -mb-16 sm:-mb-48 lg:relative lg:m-0">
-                  <div className="mx-auto max-w-md px-6 sm:max-w-2xl lg:max-w-none lg:px-0">
-                    {/* Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ */}
-                    {/* <img
-                      className="w-1200px lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:max-w-none"
-                      src={img1}
-                      alt=""
-                    /> */}
-                   
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Feature section with screenshot */}
-          <div className="relative bg-gray-50 pt-16 sm:pt-24 lg:pt-32 ">
-            <div className="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8 ">
-              {/* <div>
-                <h2 className="mt-2 text-3xl font-bold tracking-tight text-orange-600 sm:text-4xl">
-                  We have helped power 3,621,473 comparisons
-                </h2>
-
-                <p className="mx-auto mt-5 max-w-prose text-xl text-orange-400">
-                  Thousands of customers have already benefitted through our
-                  free, reliable and expert services. Become a customer now and
-                  be rewarded with smart choices for significant savings
-                </p>
-              </div> */}
-              
-                    <h1 className="mt-4 text-4xl font-bold tracking-tight text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
-                    
-                    {/* <img  className=" max-w-[42%] h-auto ml-[600px]  transform -translate-y-[2rem]  left-[15rem]  "src={img10}/>
-                      {/* <span className="block  bg-black mt-2 relative ml-64 left-[10rem] transform -translate-y-[15rem] w-422">A better way to</span> */}
-                      {/* <span className="block bg-orange-600 bg-clip-text pb-2 text-5xl text-transparent sm:pb-2 mt-2 absolute ml-60 left-[3rem] transform -translate-y-[15rem]">
-                        A better way to uplift your living
-                      </span>  */}
-                    </h1>
-                    <div className="bt1">
+                      <div className="bt1">
                         <button
                           type="button"
-                          className="mr-4  transform -translate-y-[5rem]   ml-[-76rem] max-w-[15%] inline-flex items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 "
+                          className="mr-4 inline-flex items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 "
                         >
                           Car Insurance
                         </button>
@@ -448,7 +386,7 @@ const Home = () => {
                       <div className="bt2">
                         <button
                           type="button"
-                          className=" transform -translate-y-[3rem]  ml-[-77rem] max-w-[15%] inline-flex items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                          className="inline-flex items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                         >
                           Home Insurance
                         </button>
@@ -458,7 +396,7 @@ const Home = () => {
                       <div className="bt3">
                         <button
                           type="button"
-                          className="inline-flex ml-[18rem]   transform -translate-y-[14rem]  left-[5rem] max-w-[36%] items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                          className="inline-flex items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                         >
                           Life Insurance
                         </button>
@@ -466,36 +404,34 @@ const Home = () => {
                       <div className="bt4">
                         <button
                           type="button"
-                          className="inline-flex transform -translate-y-[9rem]  ml-[-14rem] max-w-[36%] items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                          className="inline-flex items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                         >
                           Travel Insurance
                         </button>
                       </div>
                     </div>
-                    <div className='chart1'>
-    <CChart
-  type="doughnut"
-  data={{
-    labels: ['Life Insurance', 'Travel Insurance', 'Car Insurance', 'Health Insurance'],
-    datasets: [
-      {
-        backgroundColor: ['#41B883', '#E46651', '#00D8FF', '#DD1B16'],
-        data: [40, 20, 80, 10],
-      },
-    ],
-  }}
-  options={{
-    plugins: {
-      legend: {
-        labels: {
-          color: ('--cui-body-color'),
-        }
-      }
-    },
-  }}
-/>
-</div>
-            
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+
+          {/* Feature section with screenshot */}
+          <div className="relative bg-gray-50 pt-16 sm:pt-24 lg:pt-32 ">
+            <div className="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8 ">
+              <div>
+                <h2 className="mt-2 text-3xl font-bold tracking-tight text-orange-600 sm:text-4xl">
+                  We have helped power 3,621,473 comparisons
+                </h2>
+
+                <p className="mx-auto mt-5 max-w-prose text-xl text-orange-400">
+                  Thousands of customers have already benefitted through our
+                  free, reliable and expert services. Become a customer now and
+                  be rewarded with smart choices for significant savings
+                </p>
+              </div>
+            </div>
             {/* Logo Cloud */}
             <div className="bg-white pt-20">
               <div className="mx-auto max-w-9xl py-16 px-6 lg:px-10 ">
@@ -637,7 +573,7 @@ const Home = () => {
                     <div className="flex-shrink-0">
                       <img
                         className="h-40 w-full   object-cover"
-                        // src={post.imageUrl}
+                        src={post.imageUrl}
                         alt=""
                       />
                     </div>
@@ -858,4 +794,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default UserDashboard;

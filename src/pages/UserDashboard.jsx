@@ -10,7 +10,9 @@ import img3 from "../image/jubilee.jpg";
 import img4 from "../image/askari.jpg";
 import img5 from "../image/takaful.png";
 import img6 from "../image/ubl.png";
-import img7 from "../image/car-solid.svg";
+import img9 from "../image/user-dash1.jpg";
+import img10 from "../image/graph.jpg";
+
 import { useNavigate } from "react-router";
 const navigation = [
   { name: "Home", href: "#" },
@@ -231,11 +233,15 @@ const Home = () => {
                 <div>
                   <div className="hidden md:flex md:items-center md:space-x-6">
                     <a
-                      href="/login"
+                      href="/"
                       className="inline-flex items-center rounded-md border border-transparent bg-orange-600 px-4 py-2 text-base font-medium text-white hover:bg-orange-400"
                       
                     >
-                       Log in
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+</svg>
+
+                       Log out
                     </a>
                     {/* <a
                   href="#"
@@ -247,6 +253,9 @@ const Home = () => {
                 </div>
             </nav>
           </div>
+
+         
+
 
           <Transition
             as={Fragment}
@@ -312,28 +321,33 @@ const Home = () => {
         </Popover>
         <main>
           <div className="bg-orange-300	 pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 ">
-            <div className="mx-auto max-w-7xl lg:px-8">
+            <div className="mx-auto max-w-7xl lg:px-8 h-64">
               <div className="lg:grid lg:grid-cols-2 lg:gap-8">
                 <div className="mx-auto max-w-md px-6 sm:max-w-2xl sm:text-center lg:flex lg:items-center lg:px-0 lg:text-left">
                   <div className="lg:py-24">
-                    <a
+                    {/* <a
                       href="#"
                       className="inline-flex items-center rounded-full bg-orange-600 p-2 pr-4 text-white hover:text-gray-200 sm:text-base lg:text-sm xl:text-base"
-                    >
-                      <span className="rounded-full bg-gradient-to-r from-orange-500 to-orange-300 px-3 py-0.5 text-sm font-semibold leading-5 text-white">
+                    > */}
+                      {/* <span className="rounded-full bg-gradient-to-r from-orange-500 to-orange-300 px-3 py-0.5 text-sm font-semibold leading-5 text-white">
                         We're hiring
                       </span>
                       <span className="ml-4 text-sm">
                         Visit our careers page
-                      </span>
+                      </span> */}
                       {/* <ChevronRightIcon className="ml-2 h-5 w-5 text-gray-500" aria-hidden="true" /> */}
-                    </a>
+                    {/* </a> */}
+                    <div className="  flex flex-5 flex-col bg-white p-6   w-100 h-64 transform -translate-y-[7rem] ">
                     <h1 className="mt-4 text-4xl font-bold tracking-tight text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
-                      <span className="block">A better way to</span>
-                      <span className="block bg-orange-600 bg-clip-text pb-3 text-transparent sm:pb-5">
-                        ship web apps
+                    
+                    <img  className=" max-w-[62%] h-auto ml-[-100px]  transform -translate-y-[2rem]  left-[5rem]  "src={img9}/>
+                      {/* <span className="block  bg-black mt-2 relative ml-64 left-[10rem] transform -translate-y-[15rem] w-422">A better way to</span> */}
+                      <span className="block bg-orange-600 bg-clip-text pb-2 text-5xl text-transparent sm:pb-2 mt-2 absolute ml-60 left-[3rem] transform -translate-y-[15rem]">
+                        A better way to uplift your living
                       </span>
                     </h1>
+                   
+                    </div>
                     <p className="text-base text-white sm:text-xl lg:text-lg xl:text-xl">
                       Anim aute id magna aliqua ad ad non deserunt sunt. Qui
                       irure qui Lorem cupidatat commodo. Elit sunt amet fugiat
@@ -374,7 +388,50 @@ const Home = () => {
                           .
                         </p>
                       </form> */}
-                      <div className="bt1">
+                      
+                     
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-12 -mb-16 sm:-mb-48 lg:relative lg:m-0">
+                  <div className="mx-auto max-w-md px-6 sm:max-w-2xl lg:max-w-none lg:px-0">
+                    {/* Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ */}
+                    {/* <img
+                      className="w-1200px lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:max-w-none"
+                      src={img1}
+                      alt=""
+                    /> */}
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Feature section with screenshot */}
+          <div className="relative bg-gray-50 pt-16 sm:pt-24 lg:pt-32 ">
+            <div className="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8 ">
+              {/* <div>
+                <h2 className="mt-2 text-3xl font-bold tracking-tight text-orange-600 sm:text-4xl">
+                  We have helped power 3,621,473 comparisons
+                </h2>
+
+                <p className="mx-auto mt-5 max-w-prose text-xl text-orange-400">
+                  Thousands of customers have already benefitted through our
+                  free, reliable and expert services. Become a customer now and
+                  be rewarded with smart choices for significant savings
+                </p>
+              </div> */}
+              
+                    <h1 className="mt-4 text-4xl font-bold tracking-tight text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
+                    
+                    {/* <img  className=" max-w-[42%] h-auto ml-[600px]  transform -translate-y-[2rem]  left-[15rem]  "src={img10}/>
+                      {/* <span className="block  bg-black mt-2 relative ml-64 left-[10rem] transform -translate-y-[15rem] w-422">A better way to</span> */}
+                      {/* <span className="block bg-orange-600 bg-clip-text pb-2 text-5xl text-transparent sm:pb-2 mt-2 absolute ml-60 left-[3rem] transform -translate-y-[15rem]">
+                        A better way to uplift your living
+                      </span>  */}
+                    </h1>
+                    <div className="bt1">
                         <button
                           type="button"
                           className="mr-4 inline-flex items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 "
@@ -409,37 +466,7 @@ const Home = () => {
                         </button>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div className="mt-12 -mb-16 sm:-mb-48 lg:relative lg:m-0">
-                  <div className="mx-auto max-w-md px-6 sm:max-w-2xl lg:max-w-none lg:px-0">
-                    {/* Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ */}
-                    <img
-                      className="w-1200px lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:max-w-none"
-                      src={img1}
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Feature section with screenshot */}
-          <div className="relative bg-gray-50 pt-16 sm:pt-24 lg:pt-32 ">
-            <div className="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8 ">
-              <div>
-                <h2 className="mt-2 text-3xl font-bold tracking-tight text-orange-600 sm:text-4xl">
-                  We have helped power 3,621,473 comparisons
-                </h2>
-
-                <p className="mx-auto mt-5 max-w-prose text-xl text-orange-400">
-                  Thousands of customers have already benefitted through our
-                  free, reliable and expert services. Become a customer now and
-                  be rewarded with smart choices for significant savings
-                </p>
-              </div>
-            </div>
+            
             {/* Logo Cloud */}
             <div className="bg-white pt-20">
               <div className="mx-auto max-w-9xl py-16 px-6 lg:px-10 ">

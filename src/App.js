@@ -5,19 +5,21 @@ import LoginSignup from './Components/LoginSignup/LoginSignup';
 import Home from './pages/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Register from './pages/Register/Register';
+import { Company } from './pages/Company';
 
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/login' element={<LoginSignup/>}></Route>
           <Route path='/register' element={<Register/>}></Route>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter>  */}
       {/* <Home/>
-     <LoginSignup/> */}
+     <LoginSignup/>*/}
+     <Company/>
     </div>
   );
 }

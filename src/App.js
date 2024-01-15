@@ -18,14 +18,13 @@ function App() {
           <Route path='/' element={<Home />}></Route>
           <Route path='/login' element={<LoginSignup/>}></Route>
           <Route path='/register' element={<Register/>}></Route>
-        <Route path='/userDashboard' element={<UserDashboard/>}></Route>
-        <Route path='/company' element={<Company/>}></Route>
+        <Route path='/userDash' element={<UserDash/>}></Route>
         </Routes>
-      </BrowserRouter>  */}
+      </BrowserRouter>  
     {/* <Home/>
      <LoginSignup/> */}
      {/* <Company/> */}
-     <UserDash/>
+     {/* <UserDash/> */}
 
     </div>
   );

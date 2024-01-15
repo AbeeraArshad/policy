@@ -10,7 +10,6 @@ import img3 from "../image/jubilee.jpg"
 import img4 from "../image/askari.jpg"
 import img5 from "../image/takaful.png"
 import img6 from "../image/ubl.png"
-import img7 from "../image/car-solid.svg"
 const navigation = [
   { name: "Home", href: "#" },
   { name: "Insurance", href: "#" },

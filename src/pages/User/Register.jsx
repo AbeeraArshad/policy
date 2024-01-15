@@ -4,8 +4,10 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { Popover, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 
-import "../Register/Register.css"
+import "../User/Register.css";
 import { useState } from 'react';
+import axios from 'axios';
+import swal from "sweetalert";
 
 
 
@@ -195,9 +197,44 @@ const Register = () => {
   const [income, setIncome] = useState('');
   const [education, setEducation] = useState('');
   const [employment, setEmployment] = useState('');
+  const [budget, setBudget] = useState('');
 
   const handleSubmit = (e) => {
+
+
     e.preventDefault();
+
+    const response = axios.post('http://127.0.0.1:8000/',{
+      age,
+      gender,
+      bmi,
+      children,
+      smoker,
+      region,
+      maritalStatus,
+      income,
+      education,
+      employment,
+      budget
+    } ,{
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+    }
+    );
+    if(response.status === 200){
+      console.log("Age", age);
+      swal("form submitted successfully")
+      
+    }
+    else{
+      swal("unsuccessful")
+    }
+    
+
+    
+
+
     const formData = {
       age,
       gender,
@@ -208,11 +245,13 @@ const Register = () => {
       maritalStatus,
       income,
       education,
-      employment
+      employment,
+      budget,
     };
     // Here you can handle the form submission, for example, send the data to an API.
     console.log('Form submitted:', formData);
   };
+
 
   return (
    
@@ -494,8 +533,8 @@ const Register = () => {
                     type="number"
                     name="budget"
                     id="budget"
-                    value={income}
-                    onChange={(e) => setIncome(e.target.value)}
+                    value={budget}
+                    onChange={(e) => setBudget(e.target.value)}
                   />
            </div> 
 

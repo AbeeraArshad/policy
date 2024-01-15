@@ -4,16 +4,16 @@ import LoginSignup from './Components/LoginSignup/LoginSignup';
 
 import Home from './pages/Home';
 import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
-import Register from './pages/Register/Register';
+import Register from './pages/User/Register';
 import { Company } from './pages/Company';
-import UserDashboard from './pages/UserDashboard'
+import UserDash from './pages/UserDash'
 import { useState } from 'react';
 
 function App() {
   
     return (
     <div>
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />}></Route>
           <Route path='/login' element={<LoginSignup/>}></Route>
@@ -21,10 +21,12 @@ function App() {
         <Route path='/userDashboard' element={<UserDashboard/>}></Route>
         <Route path='/company' element={<Company/>}></Route>
         </Routes>
-      </BrowserRouter> 
+      </BrowserRouter>  */}
     {/* <Home/>
      <LoginSignup/> */}
      {/* <Company/> */}
+     <UserDash/>
+
     </div>
   );
 }

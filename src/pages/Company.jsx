@@ -132,7 +132,7 @@ export const Company = () => {
     {/* Static sidebar for desktop */}
     <div className="hidden md:fixed md:inset-y-0 md:flex md:w-64 md:flex-col">
       {/* Sidebar component, swap this element with another sidebar if you like */}
-      <div className="flex flex-grow flex-col overflow-y-auto bg-orange-400 pt-5">
+      <div className="flex flex-grow flex-col overflow-y-auto bg-sky-400 pt-5">
         <div className="flex flex-shrink-0 items-center px-4">
           {/* <img
             className="h-12 w-auto"
@@ -152,11 +152,11 @@ export const Company = () => {
                 key={item.name}
                 href={item.href}
                 className={classNames(
-                  item.current ? 'bg-orange-600 text-white' : 'text-indigo-100 hover:bg-orange-600',
+                  item.current ? 'bg-sky-600 text-white' : 'text-indigo-100 hover:bg-sky-600',
                   'group flex items-center px-2 py-2 text-sm font-medium rounded-md'
                 )}
               >
-                <item.icon className="mr-3 h-6 w-6 flex-shrink-0 text-orange-700" aria-hidden="true" />
+                <item.icon className="mr-3 h-6 w-6 flex-shrink-0 text-sky-700" aria-hidden="true" />
                 {item.name}
               </a>
             ))}
@@ -197,7 +197,7 @@ export const Company = () => {
           <div className="ml-4 flex items-center md:ml-6">
             <button
               type="button"
-              className="rounded-full hover:bg-orange-400 bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+              className="rounded-full hover:bg-sky-400 bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
             >
               <span className="sr-only">View notifications</span>
               <BellIcon className="h-6 w-6 " aria-hidden="true" />
@@ -206,7 +206,7 @@ export const Company = () => {
             {/* Profile dropdown */}
             <Menu as="div" className="relative ml-3">
               <div>
-                <Menu.Button className="flex max-w-xs items-center hover:bg-orange-400 rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2">
+                <Menu.Button className="flex max-w-xs items-center hover:bg-sky-400 rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2">
                   <span className="sr-only">Open user menu</span>
                   <img
                     className="w-20 rounded-full"
@@ -273,7 +273,7 @@ export const Company = () => {
             className="relative overflow-hidden rounded-lg bg-white px-4 pt-5 pb-12 shadow sm:px-6 sm:pt-6"
           >
             <dt>
-              <div className="absolute rounded-md bg-orange-500 p-3">
+              <div className="absolute rounded-md bg-sky-500 p-3">
                 <item.icon className="h-6 w-6 text-white" aria-hidden="true" />
               </div>
               <p className="ml-16 truncate text-sm font-medium text-gray-500">{item.name}</p>
@@ -297,7 +297,7 @@ export const Company = () => {
               </p>
               <div className="absolute inset-x-0 bottom-0 bg-gray-50 px-4 py-4 sm:px-6">
                 <div className="text-sm">
-                  <a href="#" className="font-medium text-orange-600 hover:text-orange-400">
+                  <a href="#" className="font-medium text-sky-600 hover:text-sky-400">
                     {' '}
                     View all<span className="sr-only"> {item.name} stats</span>
                   </a>

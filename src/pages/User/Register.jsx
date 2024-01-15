@@ -260,7 +260,7 @@ const Register = () => {
     <div className=" ">
     
     <Popover as="header" className="relative">
-          <div className="bg-orange-300	 pt-6 pb-6">
+          <div className="bg-sky-300	 pt-6 pb-6">
             <nav
               className="relative mx-auto flex max-w-7xl items-center justify-between px-6"
               aria-label="Global"
@@ -287,7 +287,7 @@ const Register = () => {
                     <a
                       key={item.name}
                       href={item.href}
-                      className=" text-xl font-medium text-white hover:text-orange-600"
+                      className=" text-xl font-medium text-white hover:text-sky-600"
                     >
                       {item.name}
                     </a>
@@ -297,7 +297,7 @@ const Register = () => {
               <div className="hidden md:flex md:items-center md:space-x-6">
                 <a
                   href="/login"
-                  className="inline-flex items-center rounded-md border border-transparent bg-orange-600 px-4 py-2 text-base font-medium text-white hover:bg-orange-400"
+                  className="inline-flex items-center rounded-md border border-transparent bg-sky-600 px-4 py-2 text-base font-medium text-white hover:bg-sky-400"
                 >
                   Log out
                 </a>
@@ -381,7 +381,7 @@ const Register = () => {
         <div className="mx-auto w-full max-w-sm ">
           <div>
          
-            <h2 className="mt-6 text-4xl font-bold tracking-tight text-orange-600">Registration</h2>
+            <h2 className="mt-6 text-4xl font-bold tracking-tight text-sky-600">Registration</h2>
           
           </div>
 
@@ -563,7 +563,7 @@ const Register = () => {
                 <div className="button">
                   <button
                     type="submit"
-                    className="flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                    className="flex w-full justify-center rounded-md border border-transparent bg-sky-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                   >
                     Submit
                   </button>
@@ -581,11 +581,11 @@ const Register = () => {
           src="https://d1e6cjojnyo6nm.cloudfront.net/webp_images/product_new/healthcampiegn_img_3.png"
           alt="#"
         />
-        <h1 className="w-100 heading1 text-orange-600">Get The Best Life Plan For</h1>
-        <h2 className="heading2  text-orange-600">Yourself, Family or Parents</h2>
+        <h1 className="w-100 heading1 text-sky-600">Get The Best Life Plan For</h1>
+        <h2 className="heading2  text-sky-600">Yourself, Family or Parents</h2>
       </div>
     </div>
-    <footer className="bg-orange-300" aria-labelledby="footer-heading">
+    <footer className="bg-sky-300" aria-labelledby="footer-heading">
           <h2 id="footer-heading" className="sr-only">
             Footer
           </h2>

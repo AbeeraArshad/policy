@@ -5,13 +5,11 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { Fragment, useState } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import img1 from "../image/main.jpg";
-import img2 from "../image/adamjee.jpg";
-import img3 from "../image/jubilee.jpg";
-import img4 from "../image/askari.jpg";
-import img5 from "../image/takaful.png";
-import img6 from "../image/ubl.png";
-import img7 from "../image/car-solid.svg";
-import { useNavigate } from "react-router";
+import img2 from "../image/adamjee.jpg"
+import img3 from "../image/jubilee.jpg"
+import img4 from "../image/askari.jpg"
+import img5 from "../image/takaful.png"
+import img6 from "../image/ubl.png"
 const navigation = [
   { name: "Home", href: "#" },
   { name: "Insurance", href: "#" },
@@ -194,7 +192,7 @@ const Home = () => {
     <div className="bg-white">
       <div className="relative overflow-hidden">
         <Popover as="header" className="relative">
-          <div className="bg-orange-300	 pt-6">
+          <div className="bg-sky-300	 pt-6">
             <nav
               className="relative mx-auto flex max-w-7xl items-center justify-between px-6"
               aria-label="Global"
@@ -221,7 +219,7 @@ const Home = () => {
                     <a
                       key={item.name}
                       href={item.href}
-                      className=" text-xl font-medium text-white hover:text-orange-600"
+                      className=" text-xl font-medium text-white hover:text-sky-600"
                     >
                       {item.name}
                     </a>
@@ -232,7 +230,7 @@ const Home = () => {
                   <div className="hidden md:flex md:items-center md:space-x-6">
                     <a
                       href="/login"
-                      className="inline-flex items-center rounded-md border border-transparent bg-orange-600 px-4 py-2 text-base font-medium text-white hover:bg-orange-400"
+                      className="inline-flex items-center rounded-md border border-transparent bg-sky-600 px-4 py-2 text-base font-medium text-white hover:bg-sky-400"
                       
                     >
                        Log in
@@ -311,33 +309,32 @@ const Home = () => {
           </Transition>
         </Popover>
         <main>
-          <div className="bg-orange-300	 pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 ">
+          <div className="bg-sky-300	 pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 ">
             <div className="mx-auto max-w-7xl lg:px-8">
               <div className="lg:grid lg:grid-cols-2 lg:gap-8">
                 <div className="mx-auto max-w-md px-6 sm:max-w-2xl sm:text-center lg:flex lg:items-center lg:px-0 lg:text-left">
                   <div className="lg:py-24">
                     <a
                       href="#"
-                      className="inline-flex items-center rounded-full bg-orange-600 p-2 pr-4 text-white hover:text-gray-200 sm:text-base lg:text-sm xl:text-base"
+                      className="inline-flex items-center rounded-full bg-sky-400 p-2 pr-4 text-white hover:text-gray-200 sm:text-base lg:text-sm xl:text-base"
                     >
-                      <span className="rounded-full bg-gradient-to-r from-orange-500 to-orange-300 px-3 py-0.5 text-sm font-semibold leading-5 text-white">
-                        We're hiring
+                      <span className="rounded-full bg-gradient-to-r from-sky-500 to-sky-300 px-3 py-0.5 text-sm font-semibold leading-5 text-white">
+                        Get The Best
                       </span>
                       <span className="ml-4 text-sm">
-                        Visit our careers page
+                        Life Insurance Plan
                       </span>
                       {/* <ChevronRightIcon className="ml-2 h-5 w-5 text-gray-500" aria-hidden="true" /> */}
                     </a>
-                    <h1 className="mt-4 text-4xl font-bold tracking-tight text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
-                      <span className="block">A better way to</span>
-                      <span className="block bg-orange-600 bg-clip-text pb-3 text-transparent sm:pb-5">
-                        ship web apps
+                    <h1 className="mt-4 text-1xl font-bold tracking-tight text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-5xl">
+                      <span className="block">We have helped power </span>
+                      <span className="block bg-sky-400 bg-clip-text pb-3 text-transparent sm:pb-5">
+                        3,622,639 comparisons
                       </span>
                     </h1>
                     <p className="text-base text-white sm:text-xl lg:text-lg xl:text-xl">
-                      Anim aute id magna aliqua ad ad non deserunt sunt. Qui
-                      irure qui Lorem cupidatat commodo. Elit sunt amet fugiat
-                      veniam occaecat fugiat.
+                      Thousands of customers have already benefitted through our free, reliable and expert services. Become a customer now and be rewarded with smart choices for significant savings.
+
                     </p>
                     <div className="mt-10 sm:mt-12  grid gap-x-8 gap-y-6 grid-cols-3">
                       {/* <form
@@ -375,17 +372,20 @@ const Home = () => {
                         </p>
                       </form> */}
                       <div className="bt1">
+
                         <button
+
                           type="button"
-                          className="mr-4 inline-flex items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 "
-                        >
+                          className="mr-4 inline-flex items-center rounded-md border border-transparent bg-sky-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-sky-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 ">
                           Car Insurance
+
                         </button>
+
                       </div>
                       <div className="bt2">
                         <button
                           type="button"
-                          className="inline-flex items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                          className="inline-flex items-center rounded-md border border-transparent bg-sky-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-sky-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                         >
                           Home Insurance
                         </button>
@@ -395,7 +395,7 @@ const Home = () => {
                       <div className="bt3">
                         <button
                           type="button"
-                          className="inline-flex items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                          className="inline-flex items-center rounded-md border border-transparent bg-sky-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-sky-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                         >
                           Life Insurance
                         </button>
@@ -403,7 +403,7 @@ const Home = () => {
                       <div className="bt4">
                         <button
                           type="button"
-                          className="inline-flex items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                          className="inline-flex items-center rounded-md border border-transparent bg-sky-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-sky-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                         >
                           Travel Insurance
                         </button>
@@ -429,24 +429,22 @@ const Home = () => {
           <div className="relative bg-gray-50 pt-16 sm:pt-24 lg:pt-32 ">
             <div className="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8 ">
               <div>
-                <h2 className="mt-2 text-3xl font-bold tracking-tight text-orange-600 sm:text-4xl">
+                <h2 className="mt-2 text-3xl font-bold tracking-tight text-sky-600 sm:text-4xl">
                   We have helped power 3,621,473 comparisons
                 </h2>
 
-                <p className="mx-auto mt-5 max-w-prose text-xl text-orange-400">
-                  Thousands of customers have already benefitted through our
-                  free, reliable and expert services. Become a customer now and
-                  be rewarded with smart choices for significant savings
+                <p className="mx-auto mt-5 max-w-prose text-xl text-sky-400">
+                  Thousands of customers have already benefitted through our free, reliable and expert services. Become a customer now and be rewarded with smart choices for significant savings
                 </p>
               </div>
             </div>
             {/* Logo Cloud */}
             <div className="bg-white pt-20">
               <div className="mx-auto max-w-9xl py-16 px-6 lg:px-10 ">
-                <h2 className="mt-2 text-3xl font-bold tracking-tight text-orange-600 sm:text-4xl text-center">
+                <h2 className="mt-2 text-3xl font-bold tracking-tight text-sky-600 sm:text-4xl text-center">
                   Our Partners
                 </h2>
-                <p className="mx-auto mt-5 max-w-prose text-2xl text-orange-400">
+                <p className="mx-auto mt-5 max-w-prose text-2xl text-sky-400">
                   Our panel consists of trusted household names from the
                   insurance industry.
                 </p>
@@ -474,10 +472,10 @@ const Home = () => {
           {/* Feature section with grid */}
           <div className="relative bg-white py-16 sm:py-24  ">
             <div className="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8">
-              <p className="mt-2 text-3xl font-bold tracking-tight text-orange-600 sm:text-4xl">
+              <p className="mt-2 text-3xl font-bold tracking-tight text-sky-600 sm:text-4xl">
                 Why Choose us
               </p>
-              <p className="mx-auto mt-5 max-w-prose text-xl text-orange-400">
+              <p className="mx-auto mt-5 max-w-prose text-xl text-sky-400">
                 To provide solutions that protect the future of our customers
               </p>
               <div className="mt-12">
@@ -487,17 +485,17 @@ const Home = () => {
                       <div className="flow-root rounded-lg bg-gray-50 px-6 pb-8">
                         <div className="-mt-6">
                           <div>
-                            <span className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-orange-500 to-orange-300 p-3 shadow-lg">
+                            <span className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-sky-500 to-sky-300 p-3 shadow-lg">
                               <FontAwesomeIcon
                                 className="h-6 w-6 text-white"
                                 aria-hidden="true"
                               />
                             </span>
                           </div>
-                          <h3 className="mt-8 text-lg font-medium tracking-tight text-orange-600">
+                          <h3 className="mt-8 text-lg font-medium tracking-tight text-sky-600">
                             {feature.name}
                           </h3>
-                          <p className="mt-5 text-base text-orange-400">
+                          <p className="mt-5 text-base text-sky-400">
                             {feature.description}
                           </p>
                         </div>
@@ -510,7 +508,7 @@ const Home = () => {
           </div>
 
           {/* Testimonial section */}
-          <div className="bg-gradient-to-r from-orange-500 to-orange-300 pb-16 lg:relative lg:z-10 lg:pb-0">
+          <div className="bg-gradient-to-r from-sky-500 to-sky-300 pb-16 lg:relative lg:z-10 lg:pb-0">
             <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-8 lg:px-8">
               <div className="relative lg:-my-8">
                 <div
@@ -563,7 +561,7 @@ const Home = () => {
           <div className="relative bg-gray-50 py-16 sm:py-24 lg:py-32">
             <div className="relative">
               <div className="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8">
-                <p className="mt-2 text-xl font-bold tracking-tight text-orange-600 sm:text-5xl">
+                <p className="mt-2 text-xl font-bold tracking-tight text-sky-600 sm:text-5xl">
                   Promotions
                 </p>
                 {/* <p className="mx-auto mt-5 max-w-prose text-xl text-orange-400">
@@ -587,7 +585,7 @@ const Home = () => {
                     </div>
                     <div className="flex flex-1 flex-col justify-between bg-white p-6">
                       <div className="flex-1">
-                        <p className="text-sm font-medium text-orange-600">
+                        <p className="text-sm font-medium text-sky-600">
                           <a
                             href={post.category.href}
                             className="hover:underline"
@@ -596,10 +594,10 @@ const Home = () => {
                           </a>
                         </p>
                         <a href={post.href} className="mt-2 block">
-                          <p className="text-xl font-semibold text-orange-600">
+                          <p className="text-xl font-semibold text-sky-600">
                             {post.title}
                           </p>
-                          <p className="mt-3 text-base text-orange-400">
+                          <p className="mt-3 text-base text-sky-400">
                             {post.preview}
                           </p>
                         </a>
@@ -615,7 +613,7 @@ const Home = () => {
                           </a>
                         </div>
                         <div className="ml-3">
-                          <p className="text-sm font-medium text-orange-600">
+                          <p className="text-sm font-medium text-sky-600">
                             <a
                               href={post.author.href}
                               className="hover:underline"
@@ -623,7 +621,7 @@ const Home = () => {
                               {post.author.name}
                             </a>
                           </p>
-                          <div className="flex space-x-1 text-sm text-orange-400">
+                          <div className="flex space-x-1 text-sm text-sky-400">
                             <time dateTime={post.datetime}>{post.date}</time>
                             <span aria-hidden="true">&middot;</span>
                             <span>{post.readingLength} read</span>
@@ -638,7 +636,7 @@ const Home = () => {
           </div>
 
           {/* CTA Section */}
-          <div className="relative bg-gradient-to-r from-orange-500 to-orange-300">
+          <div className="relative bg-gradient-to-r from-sky-500 to-sky-300">
             <div className="relative h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
               <img
                 className="h-full w-full object-cover"
@@ -647,7 +645,7 @@ const Home = () => {
               />
               <div
                 aria-hidden="true"
-                className="absolute inset-0 bg-gradient-to-r from-orange-500 mix-blend-multiply"
+                className="absolute inset-0 bg-gradient-to-r from-sky-500 mix-blend-multiply"
               />
             </div>
             <div className="relative mx-auto max-w-md py-12 px-6 sm:max-w-7xl sm:py-20 md:py-28 lg:px-8 lg:py-32">
@@ -675,7 +673,7 @@ const Home = () => {
                   <div className="inline-flex rounded-md shadow">
                     <a
                       href="#"
-                      className="inline-flex items-center justify-center rounded-md border border-transparent bg-orange-600 px-5 py-3 text-base font-medium text-white hover:bg-orange-400"
+                      className="inline-flex items-center justify-center rounded-md border border-transparent bg-sky-600 px-5 py-3 text-base font-medium text-white hover:bg-sky-400"
                     >
                       Visit the help center
                       {/* <ArrowTopRightOnSquareIcon className="-mr-1 ml-3 h-5 w-5 text-gray-400" aria-hidden="true" /> */}
@@ -686,7 +684,8 @@ const Home = () => {
             </div>
           </div>
         </main>
-        <footer className="bg-gray-50" aria-labelledby="footer-heading">
+        <div className="footer1 mt-60">
+        <footer className="bg-sky-300 " aria-labelledby="footer-heading">
           <h2 id="footer-heading" className="sr-only">
             Footer
           </h2>
@@ -698,7 +697,7 @@ const Home = () => {
                   src="https://tailwindui.com/img/logos/mark.svg?color=gray&shade=300"
                   alt="Company name"
                 />
-                <p className="text-base text-gray-500">
+                <p className="text-base text-white">
                   Making the world a better place through constructing elegant
                   hierarchies.
                 </p>
@@ -707,7 +706,7 @@ const Home = () => {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="text-gray-400 hover:text-gray-500"
+                      className="text-white hover:text-sky-500"
                     >
                       <span className="sr-only">{item.name}</span>
                       {/* <item.//icon className="h-6 w-6" aria-hidden="true" /> */}
@@ -718,7 +717,7 @@ const Home = () => {
               <div className="mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
                 <div className="md:grid md:grid-cols-2 md:gap-8">
                   <div>
-                    <h3 className="text-base font-medium text-gray-900">
+                    <h3 className="text-base font-medium text-white">
                       Solutions
                     </h3>
                     <ul role="list" className="mt-4 space-y-4">
@@ -726,7 +725,7 @@ const Home = () => {
                         <li key={item.name}>
                           <a
                             href={item.href}
-                            className="text-base text-gray-500 hover:text-gray-900"
+                            className="text-base text-white hover:text-sky-900"
                           >
                             {item.name}
                           </a>
@@ -735,7 +734,7 @@ const Home = () => {
                     </ul>
                   </div>
                   <div className="mt-12 md:mt-0">
-                    <h3 className="text-base font-medium text-gray-900">
+                    <h3 className="text-base font-medium text-white">
                       Support
                     </h3>
                     <ul role="list" className="mt-4 space-y-4">
@@ -743,7 +742,7 @@ const Home = () => {
                         <li key={item.name}>
                           <a
                             href={item.href}
-                            className="text-base text-gray-500 hover:text-gray-900"
+                            className="text-base text-white hover:text-sky-900"
                           >
                             {item.name}
                           </a>
@@ -754,7 +753,7 @@ const Home = () => {
                 </div>
                 <div className="md:grid md:grid-cols-2 md:gap-8">
                   <div>
-                    <h3 className="text-base font-medium text-gray-900">
+                    <h3 className="text-base font-medium text-white">
                       Company
                     </h3>
                     <ul role="list" className="mt-4 space-y-4">
@@ -762,7 +761,7 @@ const Home = () => {
                         <li key={item.name}>
                           <a
                             href={item.href}
-                            className="text-base text-gray-500 hover:text-gray-900"
+                            className="text-base text-white hover:text-sky-900"
                           >
                             {item.name}
                           </a>
@@ -771,7 +770,7 @@ const Home = () => {
                     </ul>
                   </div>
                   <div className="mt-12 md:mt-0">
-                    <h3 className="text-base font-medium text-gray-900">
+                    <h3 className="text-base font-medium text-white">
                       Legal
                     </h3>
                     <ul role="list" className="mt-4 space-y-4">
@@ -779,7 +778,7 @@ const Home = () => {
                         <li key={item.name}>
                           <a
                             href={item.href}
-                            className="text-base text-gray-500 hover:text-gray-900"
+                            className="text-base text-white hover:text-sky-900"
                           >
                             {item.name}
                           </a>
@@ -791,12 +790,13 @@ const Home = () => {
               </div>
             </div>
             <div className="mt-12 border-t border-gray-200 py-8">
-              <p className="text-base text-gray-400 xl:text-center">
+              <p className="text-base text-gray-600 xl:text-center">
                 &copy; 2020 Your Company, Inc. All rights reserved.
               </p>
             </div>
           </div>
         </footer>
+        </div>
       </div>
     </div>
   );

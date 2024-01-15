@@ -190,7 +190,7 @@ const Home = () => {
     <div className="bg-white">
       <div className="relative overflow-hidden">
         <Popover as="header" className="relative">
-          <div className="bg-sky-200	 pt-6">
+          <div className="bg-sky-300	 pt-6">
             <nav
               className="relative mx-auto flex max-w-7xl items-center justify-between px-6"
               aria-label="Global"
@@ -304,7 +304,7 @@ const Home = () => {
           </Transition>
         </Popover>
         <main>
-          <div className="bg-sky-200	 pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 ">
+          <div className="bg-sky-300	 pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 ">
             <div className="mx-auto max-w-7xl lg:px-8">
               <div className="lg:grid lg:grid-cols-2 lg:gap-8">
                 <div className="mx-auto max-w-md px-6 sm:max-w-2xl sm:text-center lg:flex lg:items-center lg:px-0 lg:text-left">
@@ -679,7 +679,8 @@ const Home = () => {
             </div>
           </div>
         </main>
-        <footer className="bg-gray-50" aria-labelledby="footer-heading">
+        <div className="footer1 mt-60">
+        <footer className="bg-sky-300 " aria-labelledby="footer-heading">
           <h2 id="footer-heading" className="sr-only">
             Footer
           </h2>
@@ -691,7 +692,7 @@ const Home = () => {
                   src="https://tailwindui.com/img/logos/mark.svg?color=gray&shade=300"
                   alt="Company name"
                 />
-                <p className="text-base text-gray-500">
+                <p className="text-base text-white">
                   Making the world a better place through constructing elegant
                   hierarchies.
                 </p>
@@ -700,7 +701,7 @@ const Home = () => {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="text-gray-400 hover:text-gray-500"
+                      className="text-white hover:text-sky-500"
                     >
                       <span className="sr-only">{item.name}</span>
                       {/* <item.//icon className="h-6 w-6" aria-hidden="true" /> */}
@@ -711,7 +712,7 @@ const Home = () => {
               <div className="mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
                 <div className="md:grid md:grid-cols-2 md:gap-8">
                   <div>
-                    <h3 className="text-base font-medium text-gray-900">
+                    <h3 className="text-base font-medium text-white">
                       Solutions
                     </h3>
                     <ul role="list" className="mt-4 space-y-4">
@@ -719,7 +720,7 @@ const Home = () => {
                         <li key={item.name}>
                           <a
                             href={item.href}
-                            className="text-base text-gray-500 hover:text-gray-900"
+                            className="text-base text-white hover:text-sky-900"
                           >
                             {item.name}
                           </a>
@@ -728,7 +729,7 @@ const Home = () => {
                     </ul>
                   </div>
                   <div className="mt-12 md:mt-0">
-                    <h3 className="text-base font-medium text-gray-900">
+                    <h3 className="text-base font-medium text-white">
                       Support
                     </h3>
                     <ul role="list" className="mt-4 space-y-4">
@@ -736,7 +737,7 @@ const Home = () => {
                         <li key={item.name}>
                           <a
                             href={item.href}
-                            className="text-base text-gray-500 hover:text-gray-900"
+                            className="text-base text-white hover:text-sky-900"
                           >
                             {item.name}
                           </a>
@@ -747,7 +748,7 @@ const Home = () => {
                 </div>
                 <div className="md:grid md:grid-cols-2 md:gap-8">
                   <div>
-                    <h3 className="text-base font-medium text-gray-900">
+                    <h3 className="text-base font-medium text-white">
                       Company
                     </h3>
                     <ul role="list" className="mt-4 space-y-4">
@@ -755,7 +756,7 @@ const Home = () => {
                         <li key={item.name}>
                           <a
                             href={item.href}
-                            className="text-base text-gray-500 hover:text-gray-900"
+                            className="text-base text-white hover:text-sky-900"
                           >
                             {item.name}
                           </a>
@@ -764,7 +765,7 @@ const Home = () => {
                     </ul>
                   </div>
                   <div className="mt-12 md:mt-0">
-                    <h3 className="text-base font-medium text-gray-900">
+                    <h3 className="text-base font-medium text-white">
                       Legal
                     </h3>
                     <ul role="list" className="mt-4 space-y-4">
@@ -772,7 +773,7 @@ const Home = () => {
                         <li key={item.name}>
                           <a
                             href={item.href}
-                            className="text-base text-gray-500 hover:text-gray-900"
+                            className="text-base text-white hover:text-sky-900"
                           >
                             {item.name}
                           </a>
@@ -784,12 +785,13 @@ const Home = () => {
               </div>
             </div>
             <div className="mt-12 border-t border-gray-200 py-8">
-              <p className="text-base text-gray-400 xl:text-center">
+              <p className="text-base text-gray-600 xl:text-center">
                 &copy; 2020 Your Company, Inc. All rights reserved.
               </p>
             </div>
           </div>
         </footer>
+        </div>
       </div>
     </div>
   );

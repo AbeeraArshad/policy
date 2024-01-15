@@ -11,7 +11,7 @@ import img4 from "../image/askari.jpg";
 import img5 from "../image/takaful.png";
 import img6 from "../image/ubl.png";
 import img7 from "../image/car-solid.svg";
-import "./UserDashboard";
+import "./src/pages/UserDashboard";
 import { useNavigate } from "react-router";
 const navigation = [
   { name: "Home", href: "#" },

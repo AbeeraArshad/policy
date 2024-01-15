@@ -4,7 +4,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { Popover, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 
-import "../Register/Register.css"
+import "../User/Register.css";
 import { useState } from 'react';
 import axios from 'axios';
 import swal from "sweetalert";

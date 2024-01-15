@@ -4,7 +4,7 @@ import LoginSignup from './Components/LoginSignup/LoginSignup';
 
 import Home from './pages/Home';
 import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
-import Register from './pages/Register/Register';
+import Register from './pages/User/Register';
 import { Company } from './pages/Company';
 import UserDash from './pages/UserDash'
 import { useState } from 'react';
